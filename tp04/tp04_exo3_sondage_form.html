@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+http://localhost/lo07_tp/tp04/tp04_exo3_sondage_form.html
+-->
+<html>
+    <head>
+        <title>tp02_ex4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Meta name="Author" Content="chengjie.zhang@utt.fr">
+		<link rel="stylesheet" type="text/css" href="tp04_exo3_sondage_style.css" />
+    </head>
+	<body>
+	<h1>this is h1</h1>
+	<h2>this is h2</h2>
+
+	<!--表单form-->
+	<form method="post" name="form1" action = 'tp04_exo3_sondage_action.php'>
+
+		<!--单选框-->
+		<input type="radio" name="sex" value="homme" checked/>Mr
+		<input type="radio" name="sex" value="femme">Mme<br>
+		<!--输入框-->
+		Nom: <input type="text" name="nom">		
+		Prénom: <input type="text" name="prenom"><br>	
+		Tel：<input type="tel" name="tel" />
+		Mél：<input type="email" name="email"/><br>
+		<!--复选框-->
+		<input type="checkbox" name="opérateurs" value="Orange">Orange<br>
+		<input type="checkbox" name="opérateurs" value="Bouygues">Bouygues<br>
+		<input type="checkbox" name="opérateurs" value="Free">Free<br>
+		<input type="checkbox" name="opérateurs" value="SFR">SFR<br>
+		<input type="checkbox" name="opérateurs" value="Virgin">Virgin<br>
+		<input type="checkbox" name="opérateurs" value="SFR">SFR<br>
+		<input type="checkbox" name="opérateurs" value="Autre">Autre<br>
+		<br>
+		
+		<label for="prix">le prix mensuel le plus proche</label><br/>
+		<input type="radio" name="prix" value="10€" checked/>10
+		<input type="radio" name="prix" value="20€" />20
+		<input type="radio" name="prix" value="30€" />30
+		<input type="radio" name="prix" value="40€" />40
+		<input type="radio" name="prix" value="50€" />50
+		<input type="radio" name="prix" value="60€" />60
+		<br>
+		<!--下拉框-->
+		branche:<select name="branche">
+		<option value="ISI">isi</option>
+		<option value="SRT">srt</option>
+		<option value="A2I">a2i</option>
+		<option value="GI">gi</option>
+		</select><br><br>
+
+		<!--日期时间-->
+		<input type="date" name="date"/>
+		<input type="time" name="time"/>
+		<!--搜索-->
+		<input type="search" name="search" result="s"/>
+		<!--按钮-->
+		<input type="submit" value="Submit">
+		<input type="reset" value="reset">
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button> 
+	</form>
+	</body>
+</html>
+	
+	
+	
+	

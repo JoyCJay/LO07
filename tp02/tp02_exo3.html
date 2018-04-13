@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>tp02_ex3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Meta name="Author" Content="chengjie.zhang@utt.fr">
+    </head>
+	<body>
+		<!--表单form-->
+		<form method="get" name="form1">
+		<!--输入框-->
+		Unknown:<input type="text">
+		Nom: <input type="text" name="nom">		
+		Prénom: <input type="text" name="prenom"><br>
+		Id: <input type="text" name="Id" value="JoyCJay">		
+		Password: <input type="password" name="pwd"><br><br>
+		<!--文件域-->
+		Remettre votre photo<input name="file" type="file" size=30 maxlength=32 /><br><br>
+		<!--多行输入-->
+		<label for="biology">Remarque</label><br/>
+		<textarea rows="10" cols="80" name="biology">
+		Input ur own biology
+		</textarea><br><br>
+		<!--单选框-->
+		<input type="radio" name="sex" value="male" checked/>Male	<input type="radio" name="sex" value="female">Female<br>
+		<input type="radio" name="nationality" value="Chinese">Chinese	<input type="radio" name="nationality" value="French" checked/>French<br><br>
+		<!--复选框-->
+		<input type="checkbox" name="vehicle" value="Bicycle">I have a bicycle<br>
+		<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+		<input type="checkbox" name="vehicle" value="Car">I have a car<br><br>
+		<!--下拉框-->
+		branche:<select name="branche">
+		<option value="ISI">isi</option>
+		<option value="SRT">srt</option>
+		<option value="A2I">a2i</option>
+		<option value="GI" selected>gi</option>
+		</select><br><br>
+		<!--按钮-->
+		<input type="submit" value="Submit">
+		<input type="reset" value="reset">
+		<input type="button" value="Close" onclick="windows.close()">
+		<!--图片域-->
+		<input name="image" type="image" src="D:\ppt\素材向\鼠绘（图标等）\国外社交媒体图标\半透明圆形\13.png" width=50>
+		<br><br>
+	</form>
+	</body>
+</html>
+	
+	
+	
+	

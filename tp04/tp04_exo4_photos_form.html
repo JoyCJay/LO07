@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+http://localhost/lo07_tp/tp04/tp04_exo4_photos_form.html
+-->
+<html>
+    <head>
+        <title>tp04_ex4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Meta name="Author" Content="chengjie.zhang@utt.fr">
+		<link rel="stylesheet" type="text/css" href="tp04_exo3_sondage_style.css" />
+    </head>
+	<body>
+
+	<!--表单form-->
+	<form method="post" enctype="multipart/form-data" name="form1" action = 'tp04_exo4_photos_action.php'>
+		Files<input type="file" name="file[]" multiple><br/>
+		FileA<input type="file" name="filea"><br/>
+        FileB<input type="file" name="fileb"><br/>
+        <br/>
+		<!--单选框-->
+		<input type="radio" name="sex" value="homme" checked/>Mr
+		<input type="radio" name="sex" value="femme">Mme<br>
+		<!--输入框-->
+		Nom: <input type="text" name="nom">		
+		Prénom: <input type="text" name="prenom"><br>	
+		Mél：<input type="email" name="email"/><br>
+		<!--按钮-->
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button> 
+	</form>
+	</body>
+</html>
+	
+	

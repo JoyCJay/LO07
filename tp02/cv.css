@@ -1,0 +1,63 @@
+body{ 
+  background-image: url(./images/UTT_CV.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  /*background-attachment:fixed;  滚动条背景不动*/
+ }
+
+.personal{
+	font-family: Georgia, serif;
+	font-size: 32;
+	color:#FFFFFF;
+	text-align: left;
+	position:absolute;
+	left:950px;
+	top:600px
+}
+.objectif,.formation,.stage,.extra,.honneur,.technique,.passion,.entreprise{
+	color:#330099;
+}
+p,td{
+	color:#0066FF;
+}
+
+.objectif{
+	position:absolute;
+	top:800px;
+	left:13%;
+}
+.formation{
+	position:absolute;
+	top:950px;
+	left:250px;
+}
+.stage{
+	position:absolute;
+	top:950px;
+	left:950px;
+}
+.honneur{
+	position:absolute;
+	top:1900px;
+	left:250px;
+}
+.technique{
+	position:absolute;
+	top:1250px;
+	left:250px;
+}
+.passion{
+	position:absolute;
+	top:1700px;
+	left:250px;
+}
+.entreprise{
+	position:absolute;
+	top:1800px;
+	left:950px;
+}
+.extra{
+	position:absolute;
+	top:1250px;
+	left:950px;
+}
