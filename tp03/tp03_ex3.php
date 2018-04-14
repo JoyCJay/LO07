@@ -47,7 +47,6 @@ https://dev-isi.utt.fr/~zhangch2/tp03/tp03_ex3.php
         
         //6. Même chose en utilisant la fonction implode().
         
-        
         //7. Affichez le 3ème élément du tableau.
         echo "le 3ème élément du tableau: ".$tabCapitalesUSA[2].'<br/>';
         //8. Affichez le nombre d’éléments du tableau.

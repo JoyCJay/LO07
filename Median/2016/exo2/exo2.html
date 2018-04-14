@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>exo2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+        http://localhost/lo07_tp/Median/2016/exo2/exo2.html
+    -->
+    <script type="text/javascript">
+    function GO1(){
+        document.form.method="get";
+        document.form.action="GO1.php";
+    }
+    function GO2(){
+        document.form.method="post";
+        document.form.action="GO2.php";
+    }
+    function GO3(){
+        document.form.method="post";
+        document.form.action="GO3.php";
+    }
+    function GO4(){
+        document.form.action="GO4.php";
+    }
+    function GO5(){
+        document.form.action="GO5.php";
+    }
+    </script>
+</head>
+<body>
+    <form name="form">
+        Nom<input type="text" name="Nom"><br/>
+        Prenom<input type="text" name="Prenom"><br/>
+        <input type="submit" value="GO1" onclick="GO1()">
+        <input type="submit" value="GO2" onclick="GO2()">
+        <input type="submit" value="GO3" onclick="GO3()">
+        <input type="submit" value="GO4" onclick="GO4()">
+        <input type="submit" value="GO5" onclick="GO5()">
+    </form>
+</body>
+</html>
