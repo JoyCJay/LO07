@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Generateur simple de formulaire</h1>
+    <form name="generateur" method="post" action="generator_aciton.php">
+        <fieldset>
+            <legend>Formulaire</legend>
+            <label for="fname">Name</label>
+            <input type="text" name="fname" value="formulaire1"><br/>
+            
+            <label for="fmethod">Method</label>
+            <select name="fmethod">
+             <option value="GET">GET</option>
+             <option value="POST" selected=True>POST</option>
+            </select><br/>
+            
+            <lable for="faction">Action</label>
+            <input id="faction" name="faction" type="text" value="mystere_action.php"><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Champ input</legend>
+            <label for="iname">Name</label>
+            <input id="iname" name="iname" type="text" value="ISI"><br>
+        
+            <label for="itype">Type</label>
+            <select name="itype">
+             <option value="text">TEXT</option>
+             <option value="password" selected="True">PASSWORD</option>
+             <option value="hidden">HIDDEN</option>
+             <option value="submit">SUBMIT</option>
+            </select><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Champ Select</legend>
+            <lable for="sname">Name</label>
+            <input id="sname" name="sname" type="text" value="module"><br/>
+            <label for="soptions">Option</label>
+            <input id="soptions" name="soptions" type="text" value="LO07;NF16;GL02;NF19;IF26">
+        </fieldset>
+        <input type="submit" value="Go1">
+    </form>
+</body>
+</html>
