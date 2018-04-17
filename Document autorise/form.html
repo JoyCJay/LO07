@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tp02_ex3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Meta name="Author" Content="chengjie.zhang@utt.fr">
+    </head>
+	<body>
+		<!--表单form-->
+		<form method="get" name="form">
+		<!--输入框-->
+		          <input type="hidden"   name="hidden" value="hid">
+		Id:       <input type="text"     name="Id" value="JoyCJay">		
+		Password: <input type="password" name="pwd"><br><br>
+		<!--文件域-->
+		Photo<input name="file" type="file"/><br><br>
+		<!--多行输入-->
+		<label for="biology">biology</label>
+		<textarea rows="10" cols="80" name="biology">
+		Input ur own biology
+		</textarea><br><br>
+		<!--单选框-->
+		<input type="radio" name="sex" value="male" checked/>Male	
+		<input type="radio" name="sex" value="female">Female<br>
+		<input type="radio" name="nationality" value="Chinese">Chinese	
+		<input type="radio" name="nationality" value="French" checked/>French<br><br>
+		<!--复选框-->
+		<input type="checkbox" name="vehicle" value="Bicycle">I have a bicycle<br>
+		<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+		<input type="checkbox" name="vehicle" value="Car">I have a car<br><br>
+		<!--下拉框-->
+		branche:<select name="branche">
+		<option value="ISI">isi</option>
+		<option value="GI" selected>gi</option>
+		</select><br><br>
+		<!--按钮-->
+		<input type="submit" value="Submit">
+		<input type="reset" value="reset">
+		<!--图片域-->
+		<input name="image" type="image" src="路径" width=50>
+		<br><br>
+	</form>
+	</body>
+</html>
+	
+	
+	
+	
