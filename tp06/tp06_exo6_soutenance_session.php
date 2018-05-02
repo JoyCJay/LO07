@@ -80,14 +80,14 @@
     </form>
     
     <?php
-        /*
-        if (isset($_POST['Date'])){
-            echo "<pre>";
-            print_r($_POST);
-            echo "</pre>";
-        */
-        session_start();
+        echo session_save_path();
+        session_save_path("/var/www/html/lo07_tp/tp06");
+        echo "<br/>";
+        echo session_save_path();
 
+
+        session_start();
+        
         $_SESSION['user'] = "ZHANG ChengJie";
         $personal_info = array(
             "age"=>"22",
@@ -96,18 +96,15 @@
         $_SESSION['person_info'] = $personal_info;
         
         if (isset($_SESSION)){
+            print("<br/>");
             print("session:");
-            
-            var_dump($_SESSION);
-            /*
             print("<pre>");
             print_r($_SESSION);
-            print("</pre>");
-            */
             print("<br/>");
-        }
+
             
         }
+            
     ?>
 	</body>
 </html>
