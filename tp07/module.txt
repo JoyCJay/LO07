@@ -1,0 +1,3 @@
+sigle:lo02,label:OOB,categorie:TM,effectif:200
+sigle:lo07,label:web service,categorie:TM,effectif:200
+sigle:GL02,label:genie logiciel,categorie:TM,effectif:200
