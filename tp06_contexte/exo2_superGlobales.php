@@ -19,7 +19,7 @@
 	</form>
 
     <?php
-    ////http://localhost/lo07_tp/tp06/exo2_superGlobales.php
+    ////http://localhost/lo07_tp/tp06_contexte/exo2_superGlobales.php
     function show($glob,$name){
         if (isset($glob)){
             print($name);

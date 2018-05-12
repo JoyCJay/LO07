@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-//http://localhost/lo07_tp/tp05/tp05_exo2_soutenance_action.php
+//http://localhost/lo07_tp/tp05_formulaire2/tp05_exo2_soutenance_action.php
 -->
 <html>
     <head>

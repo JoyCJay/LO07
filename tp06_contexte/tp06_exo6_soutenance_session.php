@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-//http://localhost/lo07_tp/tp06/tp06_exo6_soutenance_session.php
+//http://localhost/lo07_tp/tp06_contexte/tp06_exo6_soutenance_session.php
 -->
 <html>
     <head>

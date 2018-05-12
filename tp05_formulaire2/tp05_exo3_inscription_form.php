@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-//http://localhost/lo07_tp/tp05/tp05_exo3_inscription_form.php
+//http://localhost/lo07_tp/tp05_formulaire2/tp05_exo3_inscription_form.php
 -->
 <html>
     <head>

@@ -1,5 +1,5 @@
 <?php
-//http://localhost/lo07_tp/tp05/tp05_exo2_soutenance_view.php
+//http://localhost/lo07_tp/tp05_formulaire2/tp05_exo2_soutenance_view.php
     $file_handle = fopen("./exo2.csv","r");
     while(! feof($file_handle)){
         print("<pre>");

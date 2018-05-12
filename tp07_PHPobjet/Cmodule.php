@@ -1,5 +1,5 @@
 <?php
-//http://localhost/lo07_tp/tp07/module.php
+//http://localhost/lo07_tp/tp07_PHPobjet/module.php
     class Cmodule{
         private $sigle;
         private $label;
@@ -43,7 +43,26 @@
             fclose($file);
             echo "succeed to save_text in path: $path";
         }
+        function show_DBR(){
+            $DB_conn = mysqli_connect ('localhost','root','123456','UTT');
+            $DB_result = mysqli_query($DB_conn,'select * from module;'); 
+            if ($DB_result){
+                echo "<pre>";
+                while($temp = mysqli_fetch_array ($DB_result,MYSQLI_ASSOC)){
+                $DB_arrays[]=$temp;
+                }
+            print_r($DB_arrays);
+            echo "</pre>";
+            }
+            mysqli_close($DB_conn);
+        }
 
-
+        function save_DBR($push){
+            $DB_conn = mysqli_connect ('localhost','root','123456','UTT');
+            $sql_sentence = "INSERT INTO module (sigle,label,categorie,effectif)VALUES(\"$push[0]\",\"$push[1]\",\"$push[2]\",\"$push[3]\");";
+            $DB_result = mysqli_query($DB_conn,$sql_sentence); 
+            echo "OK, saved";            
+            mysqli_close($DB_conn);
+        }
     }
 ?>
