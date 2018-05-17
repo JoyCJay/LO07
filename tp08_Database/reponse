@@ -1,0 +1,20 @@
+1.SELECT * FROM `vin` ;
+2.SELECT * FROM `vin` ORDER BY `cru` ;
+3.SELECT * FROM `vin` WHERE `annee`=1980 ORDER BY `degre` ;//where语句要放在order by前面
+4.SELECT * FROM `vin` WHERE `degre`<= 12 AND `degre`>=11 ;
+5.SELECT *, AVG(`degre`) FROM `vin` GROUP BY `cru` ;
+6.SELECT *, MAX(`degre`) FROM `vin` GROUP BY `cru` ;
+7.
+方法1：SELECT * FROM `vin` WHERE `degre`>(SELECT AVG(`degre`) FROM `vin` ) ORDER BY `annee`,`degre` ;//子查询的>必须是一列对一列
+方法2：SELECT * FROM `vin` ,(SELECT AVG(`degre`) as moyen FROM `vin`)temp WHERE `degre`> temp.moyen ORDER BY `annee`,`degre` ;//推荐用这种。创建了一个临时表temp，可以调用多列
+
+8/9.
+方法1：SELECT `region` FROM `producteur` GROUP BY `region`;
+方法2：SELECT DISTINCT `region` FROM `producteur` 
+10.SELECT COUNT(`PRODUCTEUR_id`) FROM `recolte` ;
+11.SELECT * FROM `producteur` WHERE `region` NOT IN ('Corse', 'Beaujolais', 'Bourgogne', 'Rhône') ORDER BY `nom`,`prenom` 
+12.SELECT * FROM `vin` WHERE `degre`>12 ;
+13.SELECT * FROM `producteur` ,`vin`,`recolte` WHERE `producteur`.`id`=`recolte`.`PRODUCTEUR_id` AND `recolte`.`VIN_id` =`vin`.`id` AND `vin`.`cru`='Etoile' 
+
+
+
