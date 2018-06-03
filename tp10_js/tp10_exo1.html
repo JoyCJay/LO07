@@ -1,0 +1,39 @@
+    <!--
+        http://localhost/lo07_tp/tp10_js/tp10_exo1.html
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script type="text/javascript">
+            function f1(id){
+                balise = document.getElementById(id);
+                balise.style.color = "yellow";
+                balise.style.backgroundColor = "green";
+            }
+        </script>
+        <script src="./tp10.js"></script>
+    </head>
+    <body>
+        <div id="s1">
+            <h3>Section 1</h3>
+            <script type="text/javascript">
+                f1('s1');
+            </script>
+        </div>
+        <div id="s2"><h3>Section 2</h3>
+            <script>f2();</script>
+        </div>
+        <div id="s3">
+            <h3>Section 3</h3>
+            <script type="text/javascript">
+                f1('s2');
+                document.write("hello tonger");
+            </script>
+        </div>
+        
+    </body>
+    </html>

@@ -1,0 +1,38 @@
+    <!--
+        http://localhost/lo07_tp/tp10_js/tp10_exo2.html
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script src="./tp10.js"></script>
+        <script  src="./jquery-3.3.1.slim.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h2 id="1">1</h2>
+        <h2 id="2">2</h2>
+        <h2 id="3">3</h2>
+        <h2 id="4">4</h2>
+
+        <script>
+            document.getElementById('2').style.color="yellow";
+            $("#3").css("color","red");
+            $("#4").html("<u>vive jquery<u>");
+            alert("color of #1"+$("#1").css("color"));
+            $("#4").append("<ul><li>1</li><li><p>para</p></li></ul>");
+            var UT=["UTC","UTT","UTBM"];
+            for (const ut_name in UT) {
+                $("<li>"+UT[ut_name]+"</li>").appendTo($("#4 ul"));
+            }
+            $("#4").wrap("<i></i>");
+        </script>
+
+    domain            classe
+    analyser(quoi)    conception(comment)
+    vocablulaire      structure
+    </body>
+    </html>
